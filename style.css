@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'larish';
+    src: url('font/larish.ttf');
+}
+
+@font-face {
+    font-family: 'sofia';
+    src: url('font/sofia.otf');
+}
+
+@font-face {
+    font-family: 'sofia-light';
+    src: url('font/sofia-light.otf');
+}
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  background-color: #183F38;
+}
+
+body {
+  color: #FEF6E7;
+  font-family: 'sofia', serif;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.label {   
+    color: #FEF6E7;
+    font-family: 'sofia-light', serif;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 0;
+    padding-top: 12px;
+    padding-bottom: 1rem;
+    letter-spacing: .05rem;
+}
+
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    padding-bottom: 48px;
+    text-align: center;
+    font-family: "larish";
+    font-weight: 300;
+}
+
+h2 {
+
+    font-size: 24px;
+    line-height: 110%;
+    font-family: "larish";
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding-top: 1rem;
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0px;
+    font-family: "larish";
+    font-weight: 200;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+}
+
